@@ -11,13 +11,6 @@ export default defineConfig(() => {
         '@': path.resolve(__dirname, '.'),
       },
     },
-    ssgOptions: {
-      script: 'async',
-      formatting: 'minify',
-      includedRoutes() {
-        return ['/', '/courses', '/notes', '/dashboard', '/mock-test'];
-      },
-    },
     server: {
       hmr: process.env.DISABLE_HMR !== 'true',
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
