@@ -1,0 +1,9 @@
+[install.lifecycle]
+# Allow postinstall scripts for build tools that need native binaries
+trustedDependencies = [
+  "esbuild",
+  "vite",
+  "@vitejs/plugin-react",
+  "@tailwindcss/vite",
+  "tsx"
+]
